@@ -21,6 +21,7 @@ class MainApp extends StatelessWidget {
   }
 }
 
+
 class Tile extends StatelessWidget {
   const Tile(this.letter, this.hitType, {super.key});
 
@@ -63,13 +64,7 @@ class GamePage extends StatelessWidget {
       child: Column(
         spacing: 5.0,
         children: [
-          for (var guess in _game.guesses)
-            Row(
-              spacing: 5.0,
-              children: [
-                // We'll add the tiles here later.
-              ],
-            ),
+          // Add children next.
         ],
       ),
     );
